@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333;
+    font-family: Roboto;
+}
+h1,h2{
+    font-family: Fugaz One;
+}
+header {
+    background: url(header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+header h1 {
+    font-size: 48px;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+
+header .search-bar {
+    display: flex;
+    gap: 10px;
+}
+
+header input, header button {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+header button {
+    background-color: #ff6f61;
+    color: white;
+    cursor: pointer;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.featured-listings, .property-categories, .testimonials, .agents {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+.agents h2{
+margin-top: 100px;
+}
+
+.property {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+.luxury-apartment {
+    background-color: #ff6f61; /* Redish color */
+}
+
+.modern-house {
+    background-color: #3498db; /* Blue color */
+}
+
+.beachside-villa {
+    background-color: #2ecc71; /* Green color */
+}
+
+.category div {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    margin-block: 10px;
+}
+
+.apartments {
+    background-color: #ff6f61; /* Redish color */
+}
+
+.houses {
+    background-color: #3498db; /* Blue color */
+}
+
+.commercial {
+    background-color: #f1c40f; /* Yellow color */
+}
+
+.luxury {
+    background-color: #2ecc71; /* Green color */
+}
+
+button {
+    background-color: #ff6f61;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e04e42;
+}
+
+.testimonial, .agent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.agent div {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: #3498db;
+}
+
+.newsletter {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+.newsletter input, .newsletter button {
+    font-size:16px;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+form{
+    padding: 20px;
+}
+
+.contact form input, .contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: white;
+    background-color: #333;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    display: inline;
+    margin-inline: 16px;
+    margin-bottom: 20px;
+
+}
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+footer p{
+    margin-top: 10px;
+}
+
+.social{
+    margin-top: 24px;
+}
+.social i {
+  margin-right: 28px;
+  margin-bottom: 12px;
+}
+.backtotop {
+  padding: 6px 8px;
+  border: none;
+  border-radius: 6px;
+  color: #ffffff;
+  position: fixed;
+  bottom: 20px;
+  right: 12px;
+  background-color: steelblue;
+  cursor: pointer;
+}
+.links{
+  color: white;
+}
+.social a:nth-child(even){
+  color: red;
+}
+.social a:nth-child(odd){
+  color: black;
+}
+.social a:first-child{
+  color: blue;
+}
+
+@media(max-width:992px){
+    .search-bar{
+        flex-direction: column;
+    }
+}
